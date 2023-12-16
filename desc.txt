@@ -1,0 +1,12 @@
+Medical data breach notification system
+
+Task1- Data is stored on the website(medical data)
+    Solution: Populate the website with dummy data(maybe from kaggle)
+Task2- Limited people have access to the data because it is highly confidential(chief medical doctor,
+Admin, Patient)
+    Solution: Implementation of role based access control(RBACS)
+Task3- Tracking the breach, when a wrong account tries to login it the website after 3 trails.
+    Solution: Check up how to track number of a user trial.
+Task4- The point of sending the messages and mails to the selected users to reset the password.
+    Solution: Sending of reset mails of messages to the selected users.
+Task5- Test the Solution.
