@@ -2,6 +2,7 @@ from django. urls import reverse_lazy
 from django.views.generic import CreateView
 from django.contrib.auth.views import LoginView
 from axes.decorators import axes_dispatch
+from django.contrib.auth import authenticate
 
 from .forms import CustomUserCreationForm
 from .forms import CustomLoginForm
@@ -14,6 +15,5 @@ class SignUpView(CreateView):
     
 
 class CustomLoginView(LoginView):
-    
     form_class = CustomLoginForm
     template_name = 'login.html'

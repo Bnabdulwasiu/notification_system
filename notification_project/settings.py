@@ -142,6 +142,7 @@ AXES_LOGIN_FAILURE_LIMIT = 3
 AXES_LOCK_OUT_AT_FAILURE = True
 AXES_COOLOFF_TIME = timedelta(minutes=10)
 AXES_LOCKOUT_TEMPLATE = 'failed_attempt.html'
+# AXES_LOCKOUT_URL = 'locked-out/'
 
 AUTHENTICATION_BACKENDS = [
     'axes.backends.AxesBackend',
@@ -149,3 +150,10 @@ AUTHENTICATION_BACKENDS = [
     'axes.backends.AxesStandaloneBackend',
 ]
 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+DEFAULT_FROM_EMAIL = 'abuumair.dev@gmail.com'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'abuumair.dev@gmail.com'
+EMAIL_HOST_PASSWORD = 'xrimceokfqzfnoog'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
