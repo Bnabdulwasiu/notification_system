@@ -116,7 +116,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'Africa/Lagos'
+# TIME_ZONE = 'Africa/Lagos'
 
 
 USE_I18N = True
@@ -141,9 +141,9 @@ CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
 AXES_LOGIN_FAILURE_LIMIT = 3
 AXES_LOCK_OUT_AT_FAILURE = True
-AXES_COOLOFF_TIME = timedelta(minutes=2)
+AXES_COOLOFF_TIME = timedelta(minutes=5)
 AXES_LOCKOUT_TEMPLATE = 'failed_attempt.html'
-# AXES_LOCKOUT_URL = 'locked-out/'
+
 
 AUTHENTICATION_BACKENDS = [
     'axes.backends.AxesBackend',
@@ -151,11 +151,11 @@ AUTHENTICATION_BACKENDS = [
     'axes.backends.AxesStandaloneBackend',
 ]
 
-# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-# DEFAULT_FROM_EMAIL = 'bnabdulwasiu111@gmail.com'
-# EMAIL_HOST = 'smtp-relay.brevo.com'
-# EMAIL_HOST_USER = 'bnabdulwasiu111@gmail.com'
-# EMAIL_HOST_PASSWORD = 'Wp9KwbycAsg5I1LH'
-# EMAIL_PORT = 587
-# EMAIL_USE_TLS = True
-# #xrimceokfqzfnoog
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+DEFAULT_FROM_EMAIL = 'abuumair.dev@gmail.com'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'abuumair.dev@gmail.com'
+EMAIL_HOST_PASSWORD = 'ojufojfgbtngrksl'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
