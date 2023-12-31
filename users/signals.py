@@ -21,7 +21,7 @@ def handle_brute_force_attack(sender, request, **kwargs):
     try:
         yag = yagmail.SMTP(email_sender, email_password)
         contents = f'A BRUTE FORCE attack has been detected in your Data App,\n\
-            \nCopy this link to your browser to reset your password: <a>{request.META.get("HTTP_HOST")}/users/password_reset</a> '
+            \nCopy this link to your browser to reset your password: \n<a>{request.META.get("HTTP_HOST")}/users/password_reset</a> '
         yag.send(admin_users, subject, contents, headers=headers)
         
     except socket.error:

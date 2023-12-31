@@ -25,7 +25,7 @@ class DataCreateView(LoginRequiredMixin, UserPassesTestMixin, CreateView):
     
     
     def test_func(self):
-        return self.request.user.is_admin == 'True'
+        return self.request.user.is_admin
     
     def handle_no_permission(self):
         return redirect('data_detail')

@@ -151,7 +151,7 @@ AUTHENTICATION_BACKENDS = [
     'axes.backends.AxesStandaloneBackend',
 ]
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 DEFAULT_FROM_EMAIL = 'abuumair.dev@gmail.com'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'abuumair.dev@gmail.com'
