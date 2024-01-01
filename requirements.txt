@@ -8,8 +8,10 @@ cssutils==2.9.0
 Django==5.0
 django-axes==6.2.0
 django-crispy-forms==2.1
+gunicorn==21.2.0
 idna==3.6
 lxml==4.9.4
+packaging==23.2
 premailer==3.10.0
 requests==2.31.0
 sqlparse==0.4.4
