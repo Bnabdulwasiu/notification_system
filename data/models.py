@@ -8,7 +8,7 @@ from django.utils import timezone
 class Data(models.Model):
       detail = models.CharField(max_length=250)
       patient = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
-      date_created = models.DateTimeField(default=timezone.now())
+      date_created = models.DateTimeField(default=timezone.now)
       
       def __str__(self):
           return f"{self.patient.first_name} {self.patient.last_name} report ({self.detail})"
