@@ -151,7 +151,7 @@ AUTHENTICATION_BACKENDS = [
     'axes.backends.AxesStandaloneBackend',
 ]
 
-CSRF_COOKIE_DOMAIN = None
+# CSRF_COOKIE_DOMAIN = None
 CSRF_TRUSTED_ORIGINS = ['https://notificationsystem-production-2a75.up.railway.app/',]
 
 
