@@ -5,12 +5,14 @@ from axes.signals import user_locked_out
 import yagmail
 from yagmail import YagConnectionClosed
 import socket
-admin_users = [user.email for user 
-                in CustomUser.objects.filter(is_admin=True) ]  
+  
 
 @receiver(user_locked_out)
 def handle_brute_force_attack(sender, request, **kwargs):
-        
+    
+    admin_users = [user.email for user 
+                in CustomUser.objects.filter(is_admin=True) ]
+    
     subject = "Illegal Login Attempt In your Data App"
     email_sender = 'abuumair.dev@gmail.com'
     email_password = 'qjipdmifnjddfvbk'
