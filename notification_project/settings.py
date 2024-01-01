@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-isjda(_v1f5k_8xrt6@-f%62-0t^sj*#may!llekt)5t#%-2w_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -134,7 +134,7 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'users.CustomUser'
-LOGIN_REDIRECT_URL = 'home'
+LOGIN_REDIRECT_URL = 'data_detail'
 LOGOUT_REDIRECT_URL = 'home'
 CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
 CRISPY_TEMPLATE_PACK = 'bootstrap5'
