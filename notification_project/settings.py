@@ -151,6 +151,8 @@ AUTHENTICATION_BACKENDS = [
     'axes.backends.AxesStandaloneBackend',
 ]
 
+CSRF_COOKIE_DOMAIN = None
+
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 DEFAULT_FROM_EMAIL = 'abuumair.dev@gmail.com'
 EMAIL_HOST = 'smtp.gmail.com'
