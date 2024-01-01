@@ -152,6 +152,8 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 CSRF_COOKIE_DOMAIN = None
+CSRF_TRUSTED_ORIGINS = ['https://notificationsystem-production-2a75.up.railway.app/',]
+
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 DEFAULT_FROM_EMAIL = 'abuumair.dev@gmail.com'
