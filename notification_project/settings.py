@@ -27,7 +27,7 @@ PROJECT_ROOT =  os.path.normpath(os.path.dirname(__file__))
 SECRET_KEY = 'django-insecure-isjda(_v1f5k_8xrt6@-f%62-0t^sj*#may!llekt)5t#%-2w_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
@@ -95,14 +95,7 @@ DATABASES = {
     }
 }
 
-STORAGES = {
-    "default": {
-        "BACKEND": "django.core.files.storage.FileSystemStorage",
-    },
-    "staticfiles": {
-        "BACKEND": 'whitenoise.storage.CompressedManifestStaticFilesStorage',
-    },
-}
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
