@@ -1,5 +1,7 @@
 Medical data breach notification system
 
+Project Algorithm and pseudocode.
+
 Task1- Data is stored on the website(medical data)
     Solution: Populate the website with dummy data(maybe from kaggle)
 Task2- Limited people have access to the data because it is highly confidential(chief medical doctor,
