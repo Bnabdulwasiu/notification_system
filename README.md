@@ -20,7 +20,7 @@
 <img src="Screenshot_20240508-151125.gif" alt="Patient detail Page">
 <p>Creating new data for patient</p>
 <img src="Screenshot_20240508-151147.gif" alt="New data Page">
-<p>Display page when a user is locked out for an illegal login attempt.</p>
+<p>Display page for an illegal login attempt.</p>
 <img src="screen-20240508-151330.gif" alt="Video wlkthru">
 
 
