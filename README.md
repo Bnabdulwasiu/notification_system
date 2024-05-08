@@ -15,7 +15,7 @@
 
 <h1>App walkthrough</h1>
 <p>Application homepage</p>
-<img src="Screenshot_20240508-151056_2.gif" alt="Homepage">
+<img src="Screenshot_20240508-151056_2.gif" height="275" alt="Homepage">
 <p>Patients details page stored in card-like elements</p>
 <img src="Screenshot_20240508-151125.gif" alt="Patient detail Page">
 <p>Creating new data for patient</p>
