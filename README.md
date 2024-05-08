@@ -1,6 +1,6 @@
 # Breach Notification Application
 <br>
- An application for use in medical where the need for storing, and securing sensitive data is very crucial.
+ An application for use in medical fields where the need for storing, and securing sensitive data is very crucial.
 <hr>
 
 <h1>Project Description</h1>
@@ -13,10 +13,16 @@
 </ul>
 <hr>
 
-
 <h1>App walkthrough</h1>
-<p>Application homepage
-<img src="Screenshot_20240508-151056~2" alt="video walkthrough">
+<p>Application homepage</p>
+<img src="Screenshot_20240508-151056_2.gif" alt="Homepage">
+<p>Patients details page stored in card-like elements</p>
+<img src="Screenshot_20240508-151125.gif" alt="Patient detail Page">
+<p>Creating new data for patient</p>
+<img src="Screenshot_20240508-151147.gif" alt="New data Page">
+<p>Display page when a user is locked out for an illegal login attempt.</p>
+<img src="screen-20240508-151330.gif" alt="Video wlkthru">
+
 
 <hr>
 <a href="https://abuumair.pythonanywhere.com">Click to view project live deployment</a>
