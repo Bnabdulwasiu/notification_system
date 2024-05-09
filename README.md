@@ -14,23 +14,15 @@
 <hr>
 
 <h1>App walkthrough</h1>
-<!-- <p>Application homepage</p>
+<p>Application homepage</p>
 <img src="Screenshot_20240508-151056_2.gif" height="450" alt="Homepage">
 <p>Patients details page stored in card-like elements</p>
 <img src="Screenshot_20240508-151125.gif" height="450" alt="Patient detail Page">
 <p>Creating new data for patient</p>
-<img src="Screenshot_20240508-151147.gif" height="450" alt="New data Page"> -->
+<img src="Screenshot_20240508-151147.gif" height="450" alt="New data Page">
+<p>Display page for an illegal login attempt.</p>
+<img src="screen-20240508-151330.gif" height="450" alt="Video wlkthru">
 
-<div style="display: flex;">
-    <p>Application homepage</p>
-    <img src="Screenshot_20240508-151056_2.gif" height="450" alt="Homepage">
-    <p>Patients details page stored in card-like elements</p>
-    <img src="Screenshot_20240508-151125.gif" height="450" alt="Patient detail Page">
-    <p>Creating new data for patient</p>
-    <img src="Screenshot_20240508-151147.gif" height="450" alt="New data Page">
-    <p>Display page for an illegal login attempt.</p>
-    <img src="screen-20240508-151330.gif" height="450" alt="Video wlkthru">
-</div>
 
 <hr>
 <a href="https://abuumair.pythonanywhere.com">Click to view project live deployment</a>
