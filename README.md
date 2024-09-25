@@ -22,6 +22,8 @@
 <img src="Screenshot_20240508-151147.gif" height="450" alt="New data Page">
 <p>Display page for an illegal login attempt.</p>
 <img src="screen-20240508-151330.gif" height="450" alt="Video wlkthru">
+<p>Mails sent to admin to reset password.</p>
+<img src="mail_collage.jpg" height="450" alt="Video wlkthru">
 
 
 <hr>
