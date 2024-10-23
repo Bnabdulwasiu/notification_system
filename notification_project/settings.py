@@ -14,6 +14,7 @@ from pathlib import Path
 import os
 from datetime import timedelta
 import sys
+from dotenv import load_dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -24,10 +25,9 @@ PROJECT_ROOT =  os.path.normpath(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-isjda(_v1f5k_8xrt6@-f%62-0t^sj*#may!llekt)5t#%-2w_'
-
+SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = os.getenv('DEBUG')
 
 ALLOWED_HOSTS = ["*"]
 
@@ -166,11 +166,17 @@ CSRF_TRUSTED_ORIGINS = ['https://notificationsystem-production-2a75.up.railway.a
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-DEFAULT_FROM_EMAIL = 'abuumair.dev@gmail.com'
+DEFAULT_FROM_EMAIL = 'Data Application'
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'abuumair.dev@gmail.com'
-EMAIL_HOST_PASSWORD = 'ojufojfgbtngrksl'
-EMAIL_PORT = 587
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
+EMAIL_PORT = 567
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
- 
+
+
+
+
+CELERY_BROKER_URL = "redis://localhost:6379/0"
+CELERY_BROKER_CONNECTION_RETRY_ON_STARTUP = True
+CELERY_RESULTS_BACKEND = "redis://localhost:6379/0"
